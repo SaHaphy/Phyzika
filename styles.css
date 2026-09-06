@@ -1,0 +1,178 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alien+Block&family=Bungee&family=Caacupe+One&family=Luckiest+Guy&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alien+Block&family=Bungee&family=Caacupe+One&family=Luckiest+Guy&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alien+Block&family=Bungee&family=Caacupe+One&family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alien+Block&family=Bungee&family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alien+Block&family=Luckiest+Guy&display=swap');
+.logo-contain {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  overflow: hidden;
+}
+
+html, body {
+    margin: 0;
+    padding:0;
+    overflow-x: hidden;
+}
+#logo {
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 102%;
+  height: 100%;
+  object-fit: cover; /* remplit le cadre sans déformer l'image */
+  z-index: 1;
+}
+
+h1 {
+  position: absolute;
+  font-family: 'Luckiest Guy', Arial, Helvetica, sans-serif;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: rgb(0, 0, 0);
+  font-size: 3.5rem;
+  text-align: center;
+  margin: 0;
+  text-shadow : 0 2px 8px rgb(255,255,255,0.6)
+}
+
+#sous-titre {  position: absolute;
+  font-family: 'Bungee', Arial, Helvetica, sans-serif;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: rgb(0, 0, 0);
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0;
+  text-shadow : 0 2px 8px rgb(255,255,255,0.6)
+}
+
+#accueil {
+    font-family:'Caacupe One',Arial, Helvetica, sans-serif;
+    font-size:100px;
+    text-align: center;
+    text-decoration: underline;
+    border: 5px solid black;
+}
+
+#menu {
+  position: fixed;
+  font-family:Roboto,Arial, Helvetica, sans-serif ;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3; /* au-dessus de l'image (z-index: 1) ET du h1/h2 (z-index: 2) */
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1.2rem 0;
+  background-color: rgba(0, 0, 0, 0.35); /* bande semi-transparente */
+}
+
+#menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+#menu a:hover {
+  text-decoration: underline;
+}
+
+#objectif {
+    font-family:Oswald,Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin: 20px;
+}
+#objectif-title {
+  border: 3px solid red;
+  display: inline-block;
+  padding: 5px;
+}
+#Fonction {font-family:Oswald,Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin: 20px;
+}
+#Fonction-title {
+  border: 3px solid red;
+  display: inline-block;
+  padding: 5px;
+}
+#conseil {font-family:Oswald,Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin: 20px;
+}
+#conseil-title {
+  border: 3px solid red;
+  display: inline-block;
+  padding: 5px;
+}
+.site-footer {
+  background-color: #1a1a2e;
+  color: #ccc;
+  padding: 40px 20px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-col h4 {
+  color: #fff;
+  margin-bottom: 12px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.footer-col p {
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.footer-col a:hover {
+  color: #7cc4ff;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 30px;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 13px;
+  color: #999;
+}
