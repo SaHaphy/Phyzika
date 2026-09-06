@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <link rel="stylesheet" href="CSS_Nav.css">
+</head>
+<body>
+    <nav id="menu">
+            <a href="La Physique n'est peut-être pas ce que vous pensez.html">La Physique n'est peut-être pas ce que vous pensez</a>
+            <a href="La Physique et la Nature.html">La hysique et la Nature</a>
+            <a href="Phénomènes en tout genre.html">Phénomènes en tout genre</a>
+            <a href="Sujets Physiques Divers.html">Sujets Physiques Divers</a>
+            <a href="Articles.html">Articles</a>
+        </nav>
+<script>
+  fetch('Nav.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('nav-placeholder').innerHTML = html;
+    })
+    .catch(error => console.error('Erreur de chargement du nav :', error));
+</script>
+</body>
+</html>

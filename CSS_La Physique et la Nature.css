@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Alien+Block&family=Bungee&family=Caacupe+One&family=Luckiest+Guy&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+#intro {
+    font-family:Oswald,Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin: 20px;
+}
+#menu {
+  position: fixed;
+  font-family:Roboto,Arial, Helvetica, sans-serif ;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3; /* au-dessus de l'image (z-index: 1) ET du h1/h2 (z-index: 2) */
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1.2rem 0;
+  background-color: rgba(0, 0, 0, 0.35); /* bande semi-transparente */
+}
+
+#menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+#menu a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phénomènes en tout genre</title>
+    <link rel="stylesheet" href="CSS_Phénomènes en tout genre.css">
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+    <script>
+  fetch('Nav.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('nav-placeholder').innerHTML = html;
+    })
+    .catch(error => console.error('Erreur de chargement du nav :', error));
+</script>
+</body>
+</html>

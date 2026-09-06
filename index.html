@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phyzika - La physique derrière la nature</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="logo_phyzika_emblème.ico">
+</head>
+<body>
+    <div class="logo-contain">
+        <div id="nav-placeholder"></div>
+        <h1>Phyzika</h1>
+        <h2 id="sous-titre">La physique derrière la nature</h2>
+        <img id="logo" src="hero_physique_site.png" alt="Logo de Phyzika">
+    </div>
+    <h2 id="accueil">Bienvenue sur Phyzika</h2>
+    <div id="objectif">
+        <h3 id="objectif-title">Le site et ses objectifs</h3>
+        <p>Je m'appelle Augustin BIOLLAY, actuel étudiant en L3 de Physique Fondamentale au Magistère de Physique d'Orsay.
+            J'ai créé ce site dans le but de partager ma passion pour la physique, notamment aux personnes qui en ont gardé un mauvais 
+            souvenir du collège/lycée et qui disent détester cette matière ou que celle-ci ne les intéresse pas.
+            <br>L'objectif de ce site est multiple :
+            <br><ul>
+                <li>Montrer que la physique intéresse un très large public et que ce sont seulement les mathématiques derrière 
+                    qui dégoutent la majorité.</li>
+                <li>Expliquer qualitativement, sans utiliser les mathématiques, la physique et le fonctionnement d'un grand nombre de 
+                    phénomènes observables durant notre vie quotidienne.</li>
+                <li>Pour les intéressés, une partie contenant les mathématiques derrière chaque phénomène sera également présente 
+                    sur un lien cliquable dans chaque explication.</li>
+                <li>Poster mes travaux futurs.</li>
+
+            </ul>
+
+        </p>
+    </div>
+    <div id="Fonction">
+        <h3 id="Fonction-title">Fonctionnalités du site</h3>
+        <p>Voici comment ce site fonctionne : Vous pouvez naviguer sur celui-ci grâce au menu en haut de cette page
+            en cliquant sur les différents liens. Voici ce que vous retrouverez dans chacun de ceux-ci:
+            <ul>
+                <li><span style="font-weight: bold;">La Physique n'est peut-être pas ce que vous pensez</span>: Là où je montre que vous êtes probablement plus 
+                    intéressé par la physique que vous ne pensez l'être. </li>
+                <li><span style="font-weight: bold;">La Physique et la Nature</span>: Là où je réfléchis sur le lien entre physique et nature.</li>
+                <li><span style="font-weight: bold;">Phénomènes en tout genre</span>: Là où j'explique qualitativement, et quantitativement pour ceux qui le souhaitent, divers phénomènes physiques
+                    observables au quotidien.</li>
+                <li><span style="font-weight: bold;">Sujets Physiques Divers</span>: Là où j'explore des sujets physiques variés et intéressants.</li>
+                <li><span style="font-weight: bold;">Articles</span>: Là où je publierai mes articles et travaux.</li>
+            </ul>
+        </p>
+    </div>
+    <div id="conseil">
+        <h3 id="conseil-title">Conseils de lecture</h3>
+        <p>Voici quelques conseils de lecture en fonction de votre situation :
+            <ul>
+                <li><span style="font-weight: bold; color: red">Pour les adorateurs de la belle physique</span>: Inutile de lire la rubrique "La Physique n'est
+                     peut-être pas ce que vous pensez" étant donné votre intérêt déjà présent pour la discipline. Baladez vous sur le site autant que 
+                     vous le souhaitez!</li>
+                <li><span style="font-weight: bold; color: red">Pour les étudiants en physique ou tout autres personnes ayant déjà de solides bases</span>: N'hésitez pas 
+                à aller voir les mises en équations des phénomènes pour pousser la théorie aussi loin que possible! </li>
+                <li><span style="font-weight: bold; color: red">Pour les personnes n'étant pas intéressées par la physique au premier abord ou qui en garde un mauvais 
+                    souvenir scolaire</span>: Commencez par lire la rubrique "La Physique n'est
+                     peut-être pas ce que vous pensez". Elle pourrait, je l'espère, vous convaincre que cette matière est passionnante. Dans tous les cas, vous pouvez naviguer 
+                    sur ce site comme bon vous semble!</li>
+                <li><span style="font-weight: bold; color: red">Pour les autres</span>: Explorez à votre aise et profitez de ce site!</li>
+            </ul>
+        </p>
+    </div>
+    <footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-col">
+      <h4>Phyzika</h4>
+      <p>Un site pour explorer et donner envie de s'intéresser à la physique, entre équations et vulgarisation.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="La Physique n'est peut-être pas ce que vous pensez.html">La Physique n'est peut-être pas ce que vous pensez</a></li>
+        <li><a href="La Physique et la Nature.html">La Physique et la Nature</a></li>
+        <li><a href="Phénomènes en tout genre.html">Phénomènes en tout genre</a></li>
+        <li><a href="Articles.html">Articles</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:biollay.augustin@gmail.com">biollay.augustin@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 Phyzika — Tous droits réservés.</p>
+  </div>
+</footer>
+<script>
+  fetch('Nav.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('nav-placeholder').innerHTML = html;
+    })
+    .catch(error => console.error('Erreur de chargement du nav :', error));
+</script>
+</body>
+</html>
