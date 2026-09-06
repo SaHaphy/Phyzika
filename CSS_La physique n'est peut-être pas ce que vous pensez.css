@@ -19,3 +19,39 @@ html, body {
   object-fit: cover; /* remplit le cadre sans déformer l'image */
   z-index: 1;
 }
+#menu {
+  position: fixed;
+  font-family:Roboto,Arial, Helvetica, sans-serif ;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3; /* au-dessus de l'image (z-index: 1) ET du h1/h2 (z-index: 2) */
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1.2rem 0;
+  background-color: rgba(0, 0, 0, 0.35); /* bande semi-transparente */
+}
+
+#menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+#menu a:hover {
+  text-decoration: underline;
+}
+h1 {
+  position: absolute;
+  font-family: 'Luckiest Guy', Arial, Helvetica, sans-serif;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: rgb(0, 0, 0);
+  font-size: 3.5rem;
+  text-align: center;
+  margin: 0;
+  text-shadow : 0 2px 8px rgb(255,255,255,0.6)
+}
