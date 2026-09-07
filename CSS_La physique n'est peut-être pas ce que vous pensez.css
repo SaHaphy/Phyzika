@@ -60,7 +60,7 @@ h1 {
   margin: 0;
   text-shadow : 0 2px 8px rgb(0,0,0,0.6)
 }
-#Intro2 {border: 3px solid red;
+.Titre {border: 3px solid red;
   display: inline-block;
   padding: 5px;
 }
