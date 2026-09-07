@@ -16,6 +16,8 @@ html, body {
     padding:0;
     overflow-x: hidden;
     line-height: 1.6;
+    background-color:rgb(68, 56, 56);
+    color: rgb(197, 187, 187);
 }
 #logo {
   position: absolute;
@@ -176,4 +178,7 @@ h1 {
   text-align: center;
   font-size: 13px;
   color: #999;
+}
+.liens-fct {
+  color :rgb(56, 109, 201)
 }
