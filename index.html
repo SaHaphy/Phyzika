@@ -9,7 +9,6 @@
 </head>
 <body>
     <div class="logo-contain">
-        <div id="nav-placeholder"></div>
         <h1>Phyzika</h1>
         <h2 id="sous-titre">La physique derrière la nature</h2>
         <img id="logo" src="hero_physique_site.png" alt="Logo de Phyzika">
@@ -91,10 +90,16 @@
     </div>
   </div>
 
-  <div class="footer-bottom">
-    <p>&copy; 2026 Phyzika — Tous droits réservés.</p>
-  </div>
-</footer>
+<div id="nav-placeholder"></div>
+<div id="footer-placeholder"></div>
+
+<script>
+  fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("footer-placeholder").innerHTML = data;
+    });
+</script>
 <script>
   fetch('Nav.html')
     .then(response => response.text())
