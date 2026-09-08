@@ -47,9 +47,24 @@
        s'en rendent souvent pas compte.
 
   </p>
+  <br><p>
+    J'espere vous avoir convaincu que la physique peut vous intéresser. Si oui et si certains phénomènes 
+    ou sujet vous intéresse, les sections <a class=liens-fct href = "Phénomènes en tout genre.html">Phénomènes en tout genre</a>
+    et <a class=liens-fct href = "Sujets Physiques Divers.html">Sujets Physiques Divers </a>pourrons sûrement vous intéresser.
+    <br>Si vous n'êtes pas convaincu, vous pouvez bien sûr vous balader sur ce site. Je suis sûr qu'en l'explorant vous trouverez des 
+    sujets qui vous intéresse.
+  </p>
   </div>
   
+<div id="footer-placeholder"></div>
 
+<script>
+  fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("footer-placeholder").innerHTML = data;
+    });
+</script>
 
 <script>
   fetch('Nav.html')
