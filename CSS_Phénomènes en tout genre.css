@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Alien+Block&family=Bungee&family=Caacupe+One&family=Luckiest+Guy&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alien+Block&family=Bungee&family=Caacupe+One&family=Luckiest+Guy&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alien+Block&family=Bungee&family=Caacupe+One&family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alien+Block&family=Bungee&family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alien+Block&family=Luckiest+Guy&display=swap');
+
 #menu {
   position: fixed;
   font-family:Roboto,Arial, Helvetica, sans-serif ;
@@ -28,4 +34,44 @@ html, body {
     line-height: 1.6;
     background-color:rgb(68, 56, 56);
     color: rgb(197, 187, 187);
+}
+
+.logo-contain {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  overflow: hidden;
+}
+
+#logo {
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 102%;
+  height: 100%;
+  object-fit: cover; /* remplit le cadre sans déformer l'image */
+  z-index: 1;
+}
+h1 {
+  position: absolute;
+  font-family: 'Luckiest Guy', Arial, Helvetica, sans-serif;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: rgb(255, 255, 255);
+  font-size: 3.5rem;
+  text-align: center;
+  margin: 0;
+  text-shadow : 0 2px 8px rgb(0,0,0,0.6)
+}
+
+#content {position : relative;
+  font-family: Oswald, Arial, Helvetica, sans-serif;
+  margin: 20px;
+  font-size: 30px;
+}
+#Titre {border: 3px solid red;
+  display: inline-block;
+  padding: 5px;
 }
