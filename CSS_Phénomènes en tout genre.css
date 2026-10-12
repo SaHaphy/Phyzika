@@ -75,3 +75,19 @@ h1 {
   display: inline-block;
   padding: 5px;
 }
+
+h3 {
+  font-family: 'Caacupe One', Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+ #arc-en-ciel {
+  position : relative;
+  font-family: Oswald, Arial, Helvetica, sans-serif;
+  margin: 20px;
+  font-size: 30px;
+  border: 3px solid rgb(255, 255, 255);
+  display: inline-block;
+  padding: 5px;
+ }
